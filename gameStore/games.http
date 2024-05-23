@@ -1,0 +1,31 @@
+GET http://localhost:5188/games
+
+###
+GET http://localhost:5188/games/1
+
+###
+GET http://localhost:5188/genres
+###
+POST http://localhost:5188/games
+Content-Type: application/json
+
+{
+    "name": "Wuthering Waves",
+    "genreId": 2,
+    "price": 0.00,
+    "releaseDate": "2024-05-22"
+}
+
+###
+PUT http://localhost:5188/games/1
+Content-Type: application/json
+
+{
+   "name": "Honkai Star Rail",
+    "genreId": 1,
+    "price": 5.00,
+    "releaseDate": "2023-04-26" 
+}
+
+###
+DELETE http://localhost:5188/games/1
